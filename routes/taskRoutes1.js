@@ -8,6 +8,6 @@ const {getTasks,getTask,postTask,updateTask,deleteTask}=require("../controllers/
 // router.delete("/:id",deleteTask );
 
 router.route("/").get(getTasks).post(postTask)
-router.route("/:id").get(getTask).patch(updateTask).delete(deleteTask)
+router.route("/:id").get(getTask).put(updateTask).delete(deleteTask)
 
 module.exports = router;
